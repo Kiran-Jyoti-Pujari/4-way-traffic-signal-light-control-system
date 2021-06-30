@@ -1,0 +1,74 @@
+// C++ code
+//
+void setup()
+{
+  pinMode(13, OUTPUT);
+  pinMode(12,OUTPUT);
+  pinMode(11,OUTPUT);
+  pinMode(10,OUTPUT);
+  pinMode(9,OUTPUT);
+  pinMode(8,OUTPUT);
+  pinMode(7,OUTPUT);
+  pinMode(6,OUTPUT);
+  pinMode(5,OUTPUT);
+  pinMode(4,OUTPUT);
+  pinMode(3,OUTPUT);
+  pinMode(2,OUTPUT);
+}
+void loop()
+{
+  digitalWrite(11, HIGH);//green light on for road1
+  digitalWrite(9, HIGH);//yellow light on for road2
+  digitalWrite(7, HIGH);//red light on for road3
+  digitalWrite(4, HIGH);//red light on for road4
+  
+  delay(2000);//time delay upto 2s
+  
+  digitalWrite(11,LOW);//green light off for road1
+  digitalWrite(9,LOW);//yellow light off for road2
+  digitalWrite(7,LOW);//red light off for road3
+  digitalWrite(4,LOW);//red light off for road4
+  
+  delay(2000);//time delay upto 2s
+  
+  digitalWrite(13, HIGH);//red light on for road1
+  digitalWrite(8, HIGH);//green light on for road2
+  digitalWrite(6, HIGH);//yellow light on for road3
+  digitalWrite(4, HIGH);//red light on for road4
+  
+  delay(2000);//time delay upto 2s
+  
+  digitalWrite(13,LOW);//red light off for road1
+  digitalWrite(8,LOW);//green light off  for road3
+  digitalWrite(6, LOW);//yellow light off for road3
+  digitalWrite(4,LOW);//red light off for road4
+  
+  delay(2000);//time delay upto 2s
+  
+  digitalWrite(13, HIGH);//red light on for road1
+  digitalWrite(10, HIGH);//red light on for road2
+  digitalWrite(5, HIGH);//green light on for road3
+  digitalWrite(3, HIGH);//yellow light on for road4
+  
+  delay(2000);//time delay upto 2s
+  
+  digitalWrite(13,LOW);//red light off for road1
+  digitalWrite(10,LOW);//red light off for road2
+  digitalWrite(5,LOW);//green light off for road3
+  digitalWrite(3,LOW);//yellow light off for road4
+  
+  delay(2000);//time delay upto 2s
+  
+  digitalWrite(12, HIGH);//yellow light on for road1
+  digitalWrite(10, HIGH);//red light on for road2
+  digitalWrite(7, HIGH);//red light on for road3
+  digitalWrite(2, HIGH);//green light on for road4
+  
+  delay(2000);//time delay upto 2s
+  
+  digitalWrite(12,LOW);//yellow light off for road1
+  digitalWrite(10,LOW);//red light off for road2
+  digitalWrite(7,LOW);//red light off for road3
+  digitalWrite(2,LOW);//green light off for road4
+  
+}
